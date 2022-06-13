@@ -1,0 +1,401 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    margin: 20px;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas:
+        "perfil project project"
+        " perfil project1 project2"
+        "assets recent recent"
+        "assets post post"
+        "tech tech tech"
+        "exp exp exp"
+        "edu edu edu"
+        "footer footer footer";
+}
+
+
+.perfil {
+
+    grid-area: perfil;
+
+    background-color: var(--bg-cards);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: small;
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+
+    height: 292px;
+    width: 348px;
+
+}
+
+.photo {
+    height: 128px;
+    width: 128px;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 50%;
+    border: solid #00FF00;
+    margin-bottom: 20px;
+}
+
+.assets {
+    grid-area: assets;
+
+    background-color: var(--bg-cards);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: small;
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+
+    line-height: 42px;
+    width: 348px;
+    height: 348px;
+
+}
+
+.assets_icon1,
+.assets_icon2,
+.assets_icon3,
+.assets_icon4,
+.assets_icon5,
+.assets_icon6,
+.assets_icon7 {
+    color: var(--text-color);
+    text-transform: none;
+    text-align: left;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.ase {
+    margin-right: 20px;
+}
+
+.project {
+    grid-area: project;
+
+    background-color: var(--bg-cards);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: small;
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+
+
+    width: 952px;
+    height: 86px;
+
+}
+
+.tituloproject {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: none;
+    text-decoration: none;
+    text-align: left;
+    color: var(--text-color);
+
+
+}
+
+.complementoproject {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    text-align: right;
+    padding-left: 700px;
+    padding-bottom: 100px;
+}
+
+.project1 {
+    grid-area: project1;
+
+    background-color: var(--bg-cards);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: small;
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+
+    width: 461px;
+    height: 186px;
+}
+
+.project2 {
+    grid-area: project2;
+
+    background-color: var(--bg-cards);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: small;
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+
+    width: 461px;
+    height: 186px;
+}
+
+.myonix {
+    color: var(--text-color);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
+    text-transform: none;
+    text-decoration: none;
+
+}
+
+.pasta {
+    margin-right: 10px;
+}
+
+.commentonix {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.favicon {
+    color: var(--text-color);
+    text-transform: none;
+    text-align: left;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+
+}
+
+.giticon {
+    color: var(--text-color);
+    text-transform: none;
+    text-align: left;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+
+}
+
+.javaicon {
+    color: var(--text-color);
+    text-transform: none;
+    text-align: left;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+
+}
+
+.recent {
+    grid-area: recent;
+
+    background-color: var(--bg-cards);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: small;
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+
+
+    width: 952px;
+    height: 86px;
+}
+
+.post {
+    grid-area: post;
+
+    background-color: var(--bg-cards);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: small;
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+
+
+    width: 952px;
+    height: 201px;
+}
+
+.tech {
+    grid-area: tech;
+
+    box-sizing: border-box;
+    background-color: var(--bg-cards);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: small;
+
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    padding-top: 20px;
+    padding-left: 24px;
+
+
+    width: 348px;
+    height: 208px;
+}
+
+.boxtech {
+    display: inline;
+    background-color: var(--bg-techs);
+    margin: 14px;
+    border-radius: 30px;
+
+}
+
+.techs1,
+.techs2,
+.techs3,
+.techs4,
+.techs5,
+.techs6,
+.techs7,
+.techs8,
+.techs9 {
+    color: black;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 4px;
+
+}
+
+.exp {
+    grid-area: exp;
+
+    background-color: var(--bg-cards);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: small;
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    padding-top: 20px;
+    padding-left: 24px;
+
+
+    width: 348px;
+    height: 348px;
+}
+
+#exp1,
+#exp2,
+#exp3,
+#exp4 {
+    margin: 10px;
+    font-weight: 300;
+    font-size: 12px;
+
+}
+
+.edu {
+    grid-area: edu;
+
+    background-color: var(--bg-cards);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: small;
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    padding-top: 20px;
+    padding-left: 24px;
+
+    width: 348px;
+    height: 348px;
+}
+
+#edu1,
+#edu2,
+#edu3,
+#edu4 {
+    margin: 10px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 12px;
+    margin-top: 15px;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1px;
+}
+
+.rocket {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+}
