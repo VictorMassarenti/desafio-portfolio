@@ -53,6 +53,7 @@ body {
     margin-bottom: 20px;
 }
 
+
 .assets {
     grid-area: assets;
 
@@ -241,6 +242,19 @@ body {
 
     width: 952px;
     height: 86px;
+
+
+}
+
+.recenttitle {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: none;
+    text-decoration: none;
+    text-align: left;
+    color: var(--text-color);
 }
 
 .post {
@@ -255,10 +269,26 @@ body {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 30px;
 
-
     width: 952px;
     height: 201px;
+
+    display: flex;
 }
+
+.post2 {
+    padding-left: 20px;
+
+}
+
+.photo2 {
+    height: 128px;
+    width: 128px;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
 
 .tech {
     grid-area: tech;
@@ -387,11 +417,31 @@ h2 {
     font-size: 20px;
 }
 
+h3 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+
 h5 {
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1px;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .rocket {
