@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-areas:
         "perfil project project"
-        " perfil project1 project2"
+        "perfil projects projects"
         "assets recent recent"
         "assets post post"
         "tech tech tech"
@@ -136,8 +136,13 @@ body {
     padding-bottom: 100px;
 }
 
+.projects {
+    grid-area: projects;
+    display: flex;
+}
+
 .project1 {
-    grid-area: project1;
+    /* grid-area: project1; */
 
     background-color: var(--bg-cards);
     font-family: 'Merriweather Sans', sans-serif;
@@ -153,7 +158,7 @@ body {
 }
 
 .project2 {
-    grid-area: project2;
+    /* grid-area: project2; */
 
     background-color: var(--bg-cards);
     font-family: 'Merriweather Sans', sans-serif;
@@ -267,7 +272,7 @@ body {
     margin: 15px;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    padding: 30px;
+    
 
     width: 952px;
     height: 201px;
@@ -276,8 +281,7 @@ body {
 }
 
 .post2 {
-    padding-left: 20px;
-
+    padding-top: 14px;
 }
 
 .photo2 {
@@ -286,7 +290,8 @@ body {
     object-fit: cover;
     object-position: right;
     border-radius: 50%;
-    margin-bottom: 20px;
+    padding: 30px;
+    padding-right: 20px;
 }
 
 
@@ -310,33 +315,45 @@ body {
     height: 208px;
 }
 
-.boxtech {
-    display: inline;
-    background-color: var(--bg-techs);
-    margin: 14px;
-    border-radius: 30px;
-
+.paitech {
+    display: flex;
 }
 
-.techs1,
-.techs2,
-.techs3,
-.techs4,
-.techs5,
-.techs6,
-.techs7,
-.techs8,
-.techs9 {
+.boxtech {
+    display: flex;
+    flex-direction: column;
+}
+
+.tech1,
+.tech2,
+.tech3,
+.tech4,
+.tech5,
+.tech6,
+.tech7,
+.tech8,
+.tech9 {
+    flex-direction: row;
+    box-sizing: border-box;
+
+    background-color: var(--bg-techs);
+    margin: 8px;
+    border-radius: 30px;
+
+
     color: black;
     font-family: 'Merriweather Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 10px;
-    line-height: 30px;
+    line-height: 13px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 4px;
+    padding-top: 6px;
+
+    width: 86px;
+    height: 24px;
 
 }
 
@@ -397,8 +414,10 @@ body {
 }
 
 footer {
+    font-family: 'Merriweather Sans';
     grid-area: footer;
     text-align: center;
+    font-style: italic;
     font-weight: 400;
     font-size: 16px;
 }
@@ -438,7 +457,7 @@ h4 {
     font-size: 16px;
 }
 
-.p {
+p {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
